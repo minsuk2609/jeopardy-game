@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+export default function App(): JSX.Element {
+  const [query, setQuery] = useState(""); // New state to store the query
+
+  const runSpider = async () => {
+    try {
+      const res = await fetch(
+        `http://127.0.0.1:8000/myapp/api/scrape/?query=${encodeURIComponent(
+          query
+        )}`
+      );
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleQueryChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
+    setQuery(event.target.value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
     </div>
   );
 }
-
-export default App;
