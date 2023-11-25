@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import NavBar from "./components/NavBar";
+import Main from "./components/Main";
 
-function App() {
+import Player from "./util/Player";
+
+export default function App(): JSX.Element {
+  const [players, setPlayers] = useState<Player[]>([new Player("Player 1"), new Player("Player 2"), new Player("Player 3"), new Player("Player 4")]);
+
+  function setPlayersHelper(index: number, value: string) {
+    const temp = players.slice();
+    temp[index].name = value;
+    setPlayers(temp);
+    console.log(players);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex w-screen">
+      <NavBar
+        players={players}
+        setPlayer={setPlayersHelper}
+      />
+      <Main />
     </div>
   );
 }
-
-export default App;
