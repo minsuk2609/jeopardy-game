@@ -13,14 +13,10 @@ export default function NavBar(props: any): JSX.Element {
             <div className="flex flex-col flex-grow space-y-4 p-3 justify-center">
                 <h1>Score:</h1>
                 <ul className="flex flex-col gap-2">
-                    {/* <li><input type="text" placeholder={props.players[0]}/></li>
-                    <li><input type="text" placeholder={props.players[1]}/></li>
-                    <li><input type="text" placeholder={props.players[2]}/></li>
-                    <li><input type="text" placeholder={props.players[3]}/></li> */}
-                    <li className="flex justify-between"><input className="w-1/2" type="text" placeholder="Player 1"/><h1 className="pr-6">0</h1></li>
-                    <li className="flex justify-between"><input className="w-1/2" type="text" placeholder="Player 2"/><h1 className="pr-6">0</h1></li>
-                    <li className="flex justify-between"><input className="w-1/2" type="text" placeholder="Player 3"/><h1 className="pr-6">0</h1></li>
-                    <li className="flex justify-between"><input className="w-1/2" type="text" placeholder="Player 4"/><h1 className="pr-6">0</h1></li>
+                    <li className="flex justify-between"><input className="w-1/2" type="text" placeholder={props.players[0].name} onBlur={(event) => {event.target.value !== "" ? props.setPlayer(0, event.target.value): props.setPlayer(0, "Player 1")}}/><h1 className="pr-6">0</h1></li>
+                    <li className="flex justify-between"><input className="w-1/2" type="text" placeholder={props.players[1].name}/><h1 className="pr-6">0</h1></li>
+                    <li className="flex justify-between"><input className="w-1/2" type="text" placeholder={props.players[2].name}/><h1 className="pr-6">0</h1></li>
+                    <li className="flex justify-between"><input className="w-1/2" type="text" placeholder={props.players[3].name}/><h1 className="pr-6">0</h1></li>
                 </ul>
             </div>
             
