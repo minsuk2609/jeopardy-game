@@ -1,10 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-<<<<<<< HEAD
-module.exports = {
-  content: [],
-  theme: {
-    extend: {},
-=======
 export default {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
@@ -39,8 +33,10 @@ export default {
         "effect-v1": "var(--effect-v1)",
         "effect-v2": "var(--effect-v2)",
       },
+      width: {
+        "header": "600px",
+      }
     },
->>>>>>> 6f48e228f75d1ebe752cc7057fe63a3c500e3cd8
   },
   plugins: [],
 }
