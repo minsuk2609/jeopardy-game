@@ -1,5 +1,6 @@
 import Board from "./Board";
 import Header from "./Header";
+import TopicRow from "./TopicRow";
 
 export default function Main(props: any): JSX.Element {
     return (
@@ -7,7 +8,8 @@ export default function Main(props: any): JSX.Element {
             <Header
                 status={props.status}
             />
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center">
+                <TopicRow />
                 <Board />
             </div>
         </div>

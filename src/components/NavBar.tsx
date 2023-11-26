@@ -2,7 +2,7 @@ export default function NavBar({players, setPlayer, status, setStatus}: any): JS
 
     return (
         <div>
-            <button className={`absolute top-3 left-3 z-50- ${status ? "" : "hidden"}`} onClick={() => {
+            <button className={`absolute top-3 left-3 z-50 ${status ? "" : "hidden"}`} onClick={() => {
                 setStatus(!status);
             }}>
                 <img className="w-6 transition opacity-50 hover:opacity-100" src="/public/dashboard.png"/>
