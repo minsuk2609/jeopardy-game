@@ -1,5 +1,4 @@
 export default function NavBar({players, setPlayer, status, setStatus}: any): JSX.Element {
-
     return (
         <div>
             <button className={`absolute top-3 left-3 z-50 ${status ? "" : "hidden"}`} onClick={() => {
