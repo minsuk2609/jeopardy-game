@@ -770,6 +770,19 @@ You can apply the theme on any DOM node, not just the `body`
   --text-secondary: var(--dark-text-primary);
 }
 
+.hover\:bg-purple-80:hover {
+  background-color: var(--purple-80);
+}
+
+.hover\:bg-grey-100:hover {
+  background-color: var(--grey-100);
+}
+
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
