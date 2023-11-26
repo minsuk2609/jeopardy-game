@@ -690,12 +690,29 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
+}
+
+.border-red-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 226 226 / var(--tw-border-opacity));
+}
+
+.border-purple-80 {
+  border-color: var(--purple-80);
 }
 
 .bg-slate-200 {
@@ -794,6 +811,14 @@ You can apply the theme on any DOM node, not just the `body`
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-purple-80:hover {
+  background-color: var(--purple-80);
+}
+
+.hover\:text-white:hover {
+  color: var(--white);
 }
 
 .hover\:opacity-100:hover {
