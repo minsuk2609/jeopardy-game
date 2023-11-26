@@ -534,10 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.static {
-  position: static;
-}
-
 .fixed {
   position: fixed;
 }
@@ -550,6 +546,10 @@ video {
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .left-3 {
   left: 0.75rem;
 }
@@ -558,20 +558,16 @@ video {
   left: 12rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
 
 .top-3 {
   top: 0.75rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .z-50 {
@@ -598,16 +594,16 @@ video {
   height: 5rem;
 }
 
-.h-screen {
-  height: 100vh;
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-full {
   height: 100%;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-screen {
+  height: 100vh;
 }
 
 .min-h-screen {
@@ -630,16 +626,12 @@ video {
   width: 1.5rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-header {
-  width: 600px;
-}
-
 .w-\[calc\(100\%-12rem\)\] {
   width: calc(100% - 12rem);
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-grow {
@@ -702,16 +694,6 @@ video {
   border-style: solid;
 }
 
-.bg-red-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
-}
-
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
 .bg-slate-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
@@ -719,18 +701,6 @@ video {
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .pr-6 {
@@ -815,14 +785,6 @@ You can apply the theme on any DOM node, not just the `body`
   --bg-main: var(--bg-dark);
   --text-primary: var(--dark-text-primary);
   --text-secondary: var(--dark-text-primary);
-}
-
-.hover\:bg-purple-80:hover {
-  background-color: var(--purple-80);
-}
-
-.hover\:bg-grey-100:hover {
-  background-color: var(--grey-100);
 }
 
 .hover\:bg-gray-200:hover {
