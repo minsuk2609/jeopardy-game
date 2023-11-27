@@ -1,7 +1,7 @@
 {
   "name": "jeopardy-game",
   "homepage": "https://ba6yshark.github.io/jeopardy-game",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

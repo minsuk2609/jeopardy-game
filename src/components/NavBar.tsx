@@ -4,7 +4,7 @@ export default function NavBar({players, setPlayer, status, setStatus}: any): JS
             <button className={`absolute top-3 left-3 z-50 ${status ? "" : "hidden"}`} onClick={() => {
                 setStatus(!status);
             }}>
-                <img className="w-6 transition opacity-50 hover:opacity-100" src="/public/dashboard.png"/>
+                <img className="w-6 transition opacity-50 hover:opacity-100" src="public/dashboard.png"/>
             </button>
             <div className={`flex transition ${status ? "hidden" : ""} flex-col flex-grow shadow-xl w-48 min-h-screen`}>
                 <div className="flex justify-between items-center p-3">
@@ -12,7 +12,7 @@ export default function NavBar({players, setPlayer, status, setStatus}: any): JS
                     <button onClick={() => {
                         setStatus(!status);
                     }}>
-                        <img className="w-6 transition opacity-50 hover:opacity-100" src="/public/dashboard.png"/>
+                        <img className="w-6 transition opacity-50 hover:opacity-100" src="public/dashboard.png"/>
                     </button>
                 </div>
                 <div className="flex flex-col flex-grow space-y-4 p-3 justify-center">
