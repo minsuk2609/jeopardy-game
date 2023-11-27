@@ -55,3 +55,21 @@ You can apply the theme on any DOM node, not just the `body`
     --text-primary: var(--dark-text-primary);
     --text-secondary: var(--dark-text-primary);
 }
+
+.nav--class--mode-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: translate(-100%);
+    transition: 0.6s;
+}
+
+.nav--class--mode-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: translate(0%);
+    transition: 0.6s;
+}
