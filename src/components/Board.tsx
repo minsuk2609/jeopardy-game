@@ -5,7 +5,7 @@ import CardInfo from "../util/CardInfo";
 
 export default function Board(props: any): JSX.Element {
     const [trigger, setTrigger] = useState<boolean>(false);
-    const [cardInfo, setCardInfo] = useState<CardInfo>(new CardInfo("","" ,"", {}));
+    const [cardInfo, setCardInfo] = useState<CardInfo>(new CardInfo(0, "","" ,"", {}));
     
     return (
         <div className="relative grid grid-cols-5 gap-2">
@@ -14,7 +14,7 @@ export default function Board(props: any): JSX.Element {
             <CellColumn topic={3} setTrigger={setTrigger} cardInfo={cardInfo} setCardInfo={setCardInfo}/>
             <CellColumn topic={4} setTrigger={setTrigger} cardInfo={cardInfo} setCardInfo={setCardInfo}/>
             <CellColumn topic={5} setTrigger={setTrigger} cardInfo={cardInfo} setCardInfo={setCardInfo}/>
-            <Card trigger={trigger} setTrigger={setTrigger} cardInfo={cardInfo}/>
+            <Card trigger={trigger} setTrigger={setTrigger} cardInfo={cardInfo} players={props.players} setPlayer={props.setPlayer}/>
         </div>
     );
 }

@@ -5,14 +5,17 @@ import Main from "./components/Main";
 import Player from "./util/Player";
 
 export default function App(): JSX.Element {
-  const [players, setPlayers] = useState<Player[]>([new Player("Player 1"), new Player("Player 2"), new Player("Player 3"), new Player("Player 4")]);
+  const [players, setPlayers] = useState<Player[]>([new Player("Player 1", true), new Player("Player 2", false), new Player("Player 3", false), new Player("Player 4", false)]);
   const [status, setStatus] = useState<boolean>(false);
 
-  function setPlayersHelper(index: number, value: string) {
+  function setPlayersHelper(index: number, value: string, status: boolean) {
     const temp = players.slice();
-    temp[index].name = value;
-    setPlayers(temp);
-    console.log(players);
+    if (temp.length > 0) {
+      temp[index].name = value;
+      temp[index].active = status;
+      setPlayers(temp);
+      console.log(players);
+    }
   }
 
   return (
@@ -25,6 +28,8 @@ export default function App(): JSX.Element {
       />
       <Main
         status={status}
+        players={players}
+        setPlayer={setPlayersHelper}
       />
     </div>
   );

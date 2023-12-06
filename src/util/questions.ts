@@ -10,7 +10,7 @@ const data: any =  {
                     "3": "RSA",
                     "4": "Pigpen cipher"
                 },
-                "correct": "Ceasar cipher"
+                "correct": "Caesar cipher"
             },
             "200": {
                 "text": "An algorithm used to encrypt a non fixed size of data to a fixed size of jumbled characters is called:",
@@ -58,14 +58,14 @@ const data: any =  {
         "name": "",
         "questions": {
             "100": {
-                "text": "",
+                "text": "The most common way to protect online information, mandatory on almost all account based sites:",
                 "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
+                    "1": "Password",
+                    "2": "Two factor authentication",
+                    "3": "E-mail synching",
+                    "4": "Black magic"
                 },
-                "correct": ""
+                "correct": "Password"
             },
             "200": {
                 "text": "",
