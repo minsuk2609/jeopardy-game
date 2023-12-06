@@ -8,7 +8,7 @@ export default function Main(props: any): JSX.Element {
             <Header
                 status={props.status}
             />
-            <div className="flex flex-col items-center">
+            <div className="flex flex-1 flex-col items-center">
                 <TopicRow />
                 <Board />
             </div>
