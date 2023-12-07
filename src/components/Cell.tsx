@@ -6,7 +6,7 @@ export default function Cell(props: any): JSX.Element {
     const [visited, setVisisted] = useState<boolean>(false);
 
     return (
-        <div className={`w-20 h-20 flex flex-col items-center justify-center rounded-lg border-solid border-2 hover:bg-gray-200 ${visited ? "bg-gray-300 pointer-events-none" : ""}`} onClick={() => {
+        <div className={`w-12 h-12 xsm:h-16 xsm:w-16 sm:w-20 sm:h-20 flex flex-col items-center justify-center rounded-lg border-solid border-2 hover:bg-gray-200 ${visited ? "bg-gray-300 pointer-events-none" : ""}`} onClick={() => {
             props.setCardInfo(new CardInfo(props.value, `${data[props.topic].name} for $${props.value} qustion`,`${data[props.topic].questions[props.value].text}` , `${data[props.topic].questions[props.value].correct}`, data[props.topic].questions[props.value].answers));
             props.setTrigger(true);
             setVisisted(true);

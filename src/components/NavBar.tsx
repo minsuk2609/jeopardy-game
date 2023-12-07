@@ -10,7 +10,7 @@ export default function NavBar({players, setPlayer, status, setStatus}: any): JS
             </button>
             <div className={`flex ${status ? "md:hidden nav--class--mode-1" : "md:flex nav--class--mode-2"} flex-col flex-grow shadow-xl w-48 min-h-screen bg-[#fff]`}>
                 <div className="flex justify-between items-center p-3">
-                    <h1 className="text-purple-80">Lizzardy</h1>
+                    <h1 className="text-purple-80 text-lg">Lizzardy</h1>
                     <button onClick={() => {
                         setStatus(!status);
                     }}>
