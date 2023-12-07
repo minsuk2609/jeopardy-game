@@ -46,16 +46,16 @@ export default function Card(props: any): JSX.Element {
             <div className="relative flex flex-col gap-2 items-center m-6">
                 <h1>{props.cardInfo.category}</h1>
                 <h1 className="break-words">{props.cardInfo.question}</h1>
-                <button className={`border border-purple-80 rounded-md transition w-[75%] py-1 ${correct === 1 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
+                <button className={`border border-purple-80 rounded-md transition w-[75%] p-1 ${correct === 1 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
                     handleAnswerClick(1);
                 }}>{props.cardInfo.answerList[1]}</button>
-                <button className={`border border-purple-80 rounded-md transition w-[75%] py-1 ${correct === 2 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
+                <button className={`border border-purple-80 rounded-md transition w-[75%] p-1 ${correct === 2 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
                     handleAnswerClick(2);
                 }}>{props.cardInfo.answerList[2]}</button>
-                <button className={`border border-purple-80 rounded-md transition w-[75%] py-1 ${correct === 3 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
+                <button className={`border border-purple-80 rounded-md transition w-[75%] p-1 ${correct === 3 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
                     handleAnswerClick(3);
                 }}>{props.cardInfo.answerList[3]}</button>
-                <button className={`border border-purple-80 rounded-md transition w-[75%] py-1 ${correct === 4 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
+                <button className={`border border-purple-80 rounded-md transition w-[75%] p-1 ${correct === 4 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
                     handleAnswerClick(4);
                 }}>{props.cardInfo.answerList[4]}</button>
             </div>
