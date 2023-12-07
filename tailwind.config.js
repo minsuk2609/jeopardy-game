@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "xsm": "390px"
+      },
       colors: {
         "purple-80": "var(--purple-80)",
         "grey-30": "var(--grey-30)",
