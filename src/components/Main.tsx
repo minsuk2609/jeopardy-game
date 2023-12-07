@@ -9,12 +9,14 @@ export default function Main(props: any): JSX.Element {
                 status={props.status}
                 players={props.players}
             />
-            <div className="flex flex-1 flex-col items-center">
-                <TopicRow />
-                <Board
-                    players={props.players}
-                    setPlayer={props.setPlayer}
-                />
+            <div className="flex flex-1 flex-col items-center justify-center">
+                <div>
+                    <TopicRow />
+                    <Board
+                        players={props.players}
+                        setPlayer={props.setPlayer}
+                    />
+                </div>
             </div>
         </div>
     );
