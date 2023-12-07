@@ -35,7 +35,7 @@ export default function Card(props: any): JSX.Element {
     }
 
     return (props.trigger) ? (
-        <div className="flex items-center justify-center absolute top-0 left-0 z-40 w-full h-full rounded-lg bg-slate-200 text-sm sm:text-base">
+        <div className="flex items-center justify-center absolute top-0 left-0 z-40 w-full h-full rounded-lg bg-slate-200 text-xs sm:text-sm md:text-base">
             <button className="absolute right-0 top-0 p-3" onClick={() => {
                 props.setTrigger(false);
                 setCorrect(Number.MAX_VALUE);
@@ -52,8 +52,12 @@ export default function Card(props: any): JSX.Element {
                 <button className={`border border-purple-80 rounded-md transition w-[75%] py-1 ${correct === 2 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
                     handleAnswerClick(2);
                 }}>{props.cardInfo.answerList[2]}</button>
-                <button className={`border border-purple-80 rounded-md transition w-[75%] py-1 ${correct === 3 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`}>{props.cardInfo.answerList[3]}</button>
-                <button className={`border border-purple-80 rounded-md transition w-[75%] py-1 ${correct === 4 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`}>{props.cardInfo.answerList[4]}</button>
+                <button className={`border border-purple-80 rounded-md transition w-[75%] py-1 ${correct === 3 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
+                    handleAnswerClick(3);
+                }}>{props.cardInfo.answerList[3]}</button>
+                <button className={`border border-purple-80 rounded-md transition w-[75%] py-1 ${correct === 4 ? "bg-emerald-200 hover:bg-emerald-300" : "hover:bg-purple-80 hover:text-white"} ${answered ? "pointer-events-none" : ""}`} onClick={() => {
+                    handleAnswerClick(4);
+                }}>{props.cardInfo.answerList[4]}</button>
             </div>
         </div>
     ) : (

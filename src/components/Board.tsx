@@ -8,7 +8,7 @@ export default function Board(props: any): JSX.Element {
     const [cardInfo, setCardInfo] = useState<CardInfo>(new CardInfo(0, "","" ,"", {}));
     
     return (
-        <div className="relative grid grid-cols-5 gap-2">
+        <div className="relative grid grid-cols-5 gap-2 sm:gap-4">
             <CellColumn topic={1} setTrigger={setTrigger} cardInfo={cardInfo} setCardInfo={setCardInfo}/>
             <CellColumn topic={2} setTrigger={setTrigger} cardInfo={cardInfo} setCardInfo={setCardInfo}/>
             <CellColumn topic={3} setTrigger={setTrigger} cardInfo={cardInfo} setCardInfo={setCardInfo}/>

@@ -8,7 +8,7 @@ export default function NavBar({players, setPlayer, status, setStatus}: any): JS
             }}>
                 <img className="w-6 transition opacity-50 hover:opacity-100" src={"dashboard.png"}/>
             </button>
-            <div className={`flex ${status ? "md:hidden nav--class--mode-1" : "md:flex nav--class--mode-2"} flex-col flex-grow shadow-xl w-48 min-h-screen bg-[#fff]`}>
+            <div className={`flex ${status ? "nav--class--mode-1" : "nav--class--mode-2"} flex-col flex-grow shadow-xl w-48 min-h-screen bg-[#fff]`}>
                 <div className="flex justify-between items-center p-3">
                     <h1 className="text-purple-80 text-lg">Lizzardy</h1>
                     <button onClick={() => {
