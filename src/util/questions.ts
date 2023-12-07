@@ -1,5 +1,170 @@
 const data: any =  {
     "1": {
+        "name": "General",
+        "questions": {
+            "100": {
+                "text": "The name of a malware that hides inside a seemingly legitimate program",
+                "answers": {
+                    "1": "Ambush",
+                    "2": "Disguise virus",
+                    "3": "Trojan",
+                    "4": "Hide-and-seek"
+                },
+                "correct": "Trojan"
+            },
+            "200": {
+                "text": "The part of a virus that performs the malicious action:",
+                "answers": {
+                    "1": "Payday",
+                    "2": "Payload",
+                    "3": "Striker",
+                    "4": "Offender"
+                },
+                "correct": "Payload"
+            },
+            "300": {
+                "text": "Password salting is a common second layer of protection on passwords, what attack does it make the most difficult?",
+                "answers": {
+                    "1": "Hacking attempts",
+                    "2": "Guessing attacks",
+                    "3": "DDOS attacks",
+                    "4": "Keylogger attacks"
+                },
+                "correct": "Guessing attacks"
+            },
+            "400": {
+                "text": "Attacks that ask for a direct payment to be disabled:",
+                "answers": {
+                    "1": "Supply chain attack",
+                    "2": "Worm",
+                    "3": "Cryptojacking",
+                    "4": "Ransomware"
+                },
+                "correct": "Ransomware"
+            },
+            "500": {
+                "text": "Computers that are part of a botnet are typically called:",
+                "answers": {
+                    "1": "Zombie",
+                    "2": "Vampire",
+                    "3": "Witch",
+                    "4": "Demon"
+                },
+                "correct": "Zombie"
+            }
+        }
+    },
+    "2": {
+        "name": "Protection",
+        "questions": {
+            "100": {
+                "text": "The most common way to protect online information, mandatory on almost all account based sites:",
+                "answers": {
+                    "1": "Password",
+                    "2": "Two factor authentication",
+                    "3": "E-mail synching",
+                    "4": "Black magic"
+                },
+                "correct": "Password"
+            },
+            "200": {
+                "text": "A common way for websites to show their authenticity using third party:",
+                "answers": {
+                    "1": "Authorities",
+                    "2": "Signature",
+                    "3": "Certificates",
+                    "4": "Guarantee"
+                },
+                "correct": "Certificates"
+            },
+            "300": {
+                "text": "TLS (Transport Layer Security) has all of the following features but…",
+                "answers": {
+                    "1": "Symmetric-key encryption",
+                    "2": "GCM or MAC",
+                    "3": "Hashing salt",
+                    "4": "Certificates"
+                },
+                "correct": "Hashing salt"
+            },
+            "400": {
+                "text": "A way to ensure message integrity by adding additional information:",
+                "answers": {
+                    "1": "MII(Message Integrity Insurance)",
+                    "2": "MAC(Message Authentication Code)",
+                    "3": "MS (message safeguarding)",
+                    "4": "MCC (message certification code)"
+                },
+                "correct": "MAC(Message Authentication Code)"
+            },
+            "500": {
+                "text": "HTTP is a common acronym that stands for:",
+                "answers": {
+                    "1": "Hypertext transmission protocol",
+                    "2": "Hypertext transfer policy",
+                    "3": "Hypertext transmission policy",
+                    "4": "Hypertext transfer protocol"
+                },
+                "correct": "Hypertext transfer protocol"
+            }
+        }
+    },
+    "3": {
+        "name": "Encodement",
+        "questions": {
+            "100": {
+                "text": "A common representation of bytes rather than binary, these range from 0-f",
+                "answers": {
+                    "1": "Binary",
+                    "2": "Decimal",
+                    "3": "Octal",
+                    "4": "Hexadecimal"
+                },
+                "correct": "Hexadecimal"
+            },
+            "200": {
+                "text": "0o is a prefix for a nuber system with base:",
+                "answers": {
+                    "1": "2",
+                    "2": "4",
+                    "3": "8",
+                    "4": "16"
+                },
+                "correct": "8"
+            },
+            "300": {
+                "text": "What is the hexadecimal representation of 0b10111010?",
+                "answers": {
+                    "1": "0xAB",
+                    "2": "0xBA",
+                    "3": "0xBC",
+                    "4": "0xDC"
+                },
+                "correct": "0xBA"
+            },
+            "400": {
+                "text": "Different systems of data representation have different bases, pick the correct one",
+                "answers": {
+                    "1": "Binary base 1",
+                    "2": "Binary base 2",
+                    "3": "Hexadecimal base 6",
+                    "4": "Octal base 18"
+                },
+                "correct": "Binary base 2"
+            },
+            "500": {
+                "text": "On UNIX authorities for a file can be given and taken away using numbers from what system of data representation?",
+                "answers": {
+                    "1": "Binary",
+                    "2": "Octal",
+                    "3": "Decimal",
+                    "4": "Hexadecimal"
+                },
+                "correct": "Octal"
+            }
+        }
+    },
+    "4": {
         "name": "Encryption",
         "questions": {
             "100": {
@@ -54,223 +219,58 @@ const data: any =  {
             }
         }
     },
-    "2": {
-        "name": "",
-        "questions": {
-            "100": {
-                "text": "The most common way to protect online information, mandatory on almost all account based sites:",
-                "answers": {
-                    "1": "Password",
-                    "2": "Two factor authentication",
-                    "3": "E-mail synching",
-                    "4": "Black magic"
-                },
-                "correct": "Password"
-            },
-            "200": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "300": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "400": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "500": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            }
-        }
-    },
-    "3": {
-        "name": "",
-        "questions": {
-            "100": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "200": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "300": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "400": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "500": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            }
-        }
-    },
-    "4": {
-        "name": "",
-        "questions": {
-            "100": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "200": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "300": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "400": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            },
-            "500": {
-                "text": "",
-                "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
-                },
-                "correct": ""
-            }
-        }
-    },
     "5": {
-        "name": "",
+        "name": "Viruses",
         "questions": {
             "100": {
-                "text": "",
+                "text": "The creator of the first ever worm is:",
                 "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
+                    "1": "Jesus Christ",
+                    "2": "Linus Torvalds",
+                    "3": "Bill Gates",
+                    "4": "Bob Thomas"
                 },
-                "correct": ""
+                "correct": "Bob Thomas"
             },
             "200": {
-                "text": "",
+                "text": "The name of the virus famously spread through emails via love confessions:",
                 "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
+                    "1": "Love letter virus",
+                    "2": "ILOVEYOU",
+                    "3": "Notebook",
+                    "4": "Nicolas Sparks"
                 },
-                "correct": ""
+                "correct": "ILOVEYOU"
             },
             "300": {
-                "text": "",
+                "text": "The virus that caused the first felony conviction under the Computer Fraud and Abuse Act:",
                 "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
+                    "1": "Morris worm",
+                    "2": "Stuxnet",
+                    "3": "Creeper",
+                    "4": "Zombie"
                 },
-                "correct": ""
+                "correct": "Morris worm"
             },
             "400": {
-                "text": "",
+                "text": "Although neither country has admitted responsibility, Stuxnet was theoretically created to sabotage the Iranian government by the government of:",
                 "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
+                    "1": "USA and Afghanistan",
+                    "2": "Afghanistan and Israel",
+                    "3": "USA and Israel",
+                    "4": "Afghanistan and Palestine"
                 },
-                "correct": ""
+                "correct": "USA and Israel"
             },
             "500": {
-                "text": "",
+                "text": "The virus with the most cost in damages:",
                 "answers": {
-                    "1": "",
-                    "2": "",
-                    "3": "",
-                    "4": ""
+                    "1": "Sobig",
+                    "2": "Mydoom",
+                    "3": "ILOVEYOU",
+                    "4": "Klez"
                 },
-                "correct": ""
+                "correct": "Mydoom"
             }
         }
     }
